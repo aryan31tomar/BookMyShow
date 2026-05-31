@@ -6,7 +6,7 @@ public class User{
     private String contact;
 
 
-    User(String username,Sting password , String fullname, String contact){
+    User(String username,String password , String fullname, String contact){
         
         this.username=username;
         this.password=password;
@@ -42,6 +42,7 @@ public class User{
         this.contact=contact;
     }
 
-    public Sting toString(){
+    public String toString(){
         return fullname + " (" +username +")";
+    }
 }

@@ -16,7 +16,7 @@ public class UserService{
     }
 
     public boolean loginUser(String username, String password){
-         if(userMap.containsKey(username)){
+         if(!userMap.containsKey(username)){
             System.out.println("UserName not found");
             return false;
          }
@@ -28,12 +28,12 @@ public class UserService{
          }
          currentUser=user;
           
-         System.out.println("Welcome"+currentUser.getfullname()+"!");
+         System.out.println("Welcome "+currentUser.getfullname()+"!");
           return true;
     }
 
 
-    public void logOutUser(String username, String password){
+    public void logOutUser(){
          if(currentUser!=null){
             System.out.println("Logged Out ->" +currentUser.getfullname());
          }

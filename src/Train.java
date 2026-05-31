@@ -6,7 +6,7 @@ public class Train{
     private int availableseats;
     private int totalseats;
 
-    Train(int trainid,String name,Sting source , String destination, int totalseats){
+    Train(int trainid,String name,String source , String destination, int totalseats){
         this.trainid=trainid;
         this.name=name;
         this.source=source;
@@ -69,8 +69,8 @@ public class Train{
         availableseats+=count;
     }
 
-    public Sting toString(){
-        return trainid + " | " + name + " | " +source + " -> "+ destination + "Seats Available" + availableseats;
+    public String toString(){
+        return trainid + " | " + name + " | " +source + " -> "+ destination + " | Seats Available :" + availableseats;
     }
      
 
